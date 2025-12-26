@@ -1,0 +1,23 @@
+# Tuple Operations
+
+t = (10, 20, 30, 20, 40)
+
+print("Tuple:", t)
+
+# Access elements
+print("First element:", t[0])
+print("Last element:", t[-1])
+
+# Slicing
+print("Slicing (1 to 3):", t[1:4])
+
+# Count an element
+count_20 = t.count(20)
+print("Count of 20:", count_20)
+
+# Index of an element
+index_30 = t.index(30)
+print("Index of 30:", index_30)
+
+# Length of tuple
+print("Length of tuple:", len(t))
