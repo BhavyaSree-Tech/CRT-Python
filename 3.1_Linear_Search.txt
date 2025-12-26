@@ -1,0 +1,18 @@
+#Linear Search 
+arr = []
+n = int(input("Enter no.of elements to add:"))
+
+for i in range(n):
+    x = int(input("Enter element:"))
+    arr.append(x)
+
+print("The elements are:", arr)
+
+key = int(input("Enter element to search:"))
+
+for i in range(n):
+    if key == arr[i]:
+        print("Element found at index", i)
+        break
+else:
+    print("Element not found")
