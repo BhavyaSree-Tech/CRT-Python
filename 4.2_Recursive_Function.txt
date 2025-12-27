@@ -1,0 +1,16 @@
+
+# Recursive function to find factorial of a number
+
+def factorial(n):
+    # Base condition:
+    # If n is 0 or 1, factorial is 1
+    if n == 0 or n == 1:
+        return 1
+
+    # Recursive call:
+    # Function calls itself with (n-1)
+    return n * factorial(n - 1)
+
+# Main program
+num = int(input("Enter a number: "))
+print("Factorial is:", factorial(num))

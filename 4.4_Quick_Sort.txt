@@ -1,0 +1,22 @@
+#Quick sort
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    pivot = arr[-1]
+    left = []
+    right = []
+
+    # Split array into left and right using normal for loop
+    for i in range(len(arr) - 1):
+        if arr[i] <= pivot:
+            left.append(arr[i])
+        else:
+            right.append(arr[i])
+
+    return quick_sort(left) + [pivot] + quick_sort(right)
+
+arr = [20, 9, 45, 5]
+print("Original list:", arr)
+sorted_arr = quick_sort(arr)
+print("Sorted list:", sorted_arr)

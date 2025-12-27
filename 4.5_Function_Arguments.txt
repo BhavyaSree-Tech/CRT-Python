@@ -1,0 +1,35 @@
+#Function Arguments
+# 1️⃣ Positional Arguments
+def add(a, b):
+    return a + b
+
+print("Addition (positional):", add(5, 3))
+
+
+# 2️⃣ Default Arguments
+def greet(name="User"):
+    print("Hello", name)
+
+greet()            # Uses default
+greet("Bhavya")    # Overrides default
+
+
+# 3️⃣ Keyword Arguments
+def info(name, age):
+    print("Name:", name, "| Age:", age)
+
+info(age=20, name="Sree")   # Order doesn't matter
+
+
+# 4️⃣ Variable-length Arguments (*args)
+def total(*numbers):
+    return sum(numbers)
+
+print("Total (*args):", total(1, 2, 3, 4))
+
+
+# 5️⃣ Variable-length Keyword Arguments (**kwargs)
+def details(**data):
+    print("Details (**kwargs):", data)
+
+details(name="Bhavya", age=20, city="Delhi")
