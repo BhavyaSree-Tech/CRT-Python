@@ -1,0 +1,19 @@
+
+# Abstraction + Encapsulation example
+
+from abc import ABC, abstractmethod
+
+class Bank(ABC):
+    @abstractmethod
+    def show_balance(self):
+        pass
+
+class Account(Bank):
+    def __init__(self):
+        self.__balance = 1000   # encapsulation (private data)
+
+    def show_balance(self):
+        print("Balance:", self.__balance)
+
+a = Account()
+a.show_balance()

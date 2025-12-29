@@ -1,0 +1,12 @@
+#inheritance example
+class Parent:
+    def house(self):
+        print("Parent house")
+
+class Child(Parent):
+    def bike(self):
+        print("Child bike")
+
+c = Child()
+c.house()
+c.bike()

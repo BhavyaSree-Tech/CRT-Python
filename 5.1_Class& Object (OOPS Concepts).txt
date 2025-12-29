@@ -1,0 +1,9 @@
+# Class and Object example
+
+class Student:#here Student is class name
+    def display(self):
+        print("This is a Student object")
+
+# Object creation
+s1 = Student()
+s1.display()
