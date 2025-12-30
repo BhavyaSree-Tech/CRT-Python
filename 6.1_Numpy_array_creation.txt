@@ -1,0 +1,21 @@
+
+import numpy as np
+
+# Create 1D array
+arr = np.array([1, 2, 3, 4])
+print("Array:", arr)
+
+# Zeros and Ones
+print("Zeros:", np.zeros(5))
+print("Ones:", np.ones(5))
+
+# Arange
+print("Arange:", np.arange(1, 10, 2))
+
+# 2D array
+arr2d = np.array([[1, 2], [3, 4]])
+print("2D Array:\n", arr2d)
+
+# Reshape
+arr3 = np.array([1, 2, 3, 4, 5, 6])
+print("Reshaped:\n", arr3.reshape(2, 3))

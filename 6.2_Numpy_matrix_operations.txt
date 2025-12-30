@@ -1,0 +1,12 @@
+12.30 17:21
+import numpy as np
+
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+
+# Matrix Addition
+print("Addition:\n", A + B)
+
+# Matrix Multiplication
+C = np.array([[2, 0], [1, 2]])
+print("Multiplication:\n", A @ C)

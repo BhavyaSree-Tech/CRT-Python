@@ -1,0 +1,22 @@
+
+import numpy as np
+
+arr = np.array([10, 20, 30, 40, 50])
+
+# Statistics
+print("Max:", arr.max())
+print("Min:", arr.min())
+print("Sum:", arr.sum())
+print("Mean:", np.mean(arr))
+print("Median:", np.median(arr))
+print("Standard Deviation:", np.std(arr))
+
+# Indexing
+print("First element:", arr[0])
+
+# Slicing
+print("Slice:", arr[1:4])
+
+# 2D Indexing
+arr2d = np.array([[1, 2], [3, 4]])
+print("2D Element:", arr2d[1][0])
